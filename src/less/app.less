@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, san-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  padding-bottom: 10px;
+  label {
+    padding-right: 5px;
+  }
+  input {
+    width: 50px;
+  }
+  button {
+    margin-left: 20px;
+  }
+
+}
+
+main {
+  margin-top: 75px;
+}
+
+.loading {
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+.infinite-row {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.stats {
+  position: fixed;
+  padding: 10px;
+  top: 20px;
+  right: 20px;
+  border: 1px solid #000;
+  width: 200px;
+  background: #fff;
+  h3, ul {
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+// bit of a hack but makes the render count viewable on smaller devices
+@media only screen and (max-device-width: 800px) {
+
+  header {
+    padding-top: 20px;
+    h1 {
+      margin: 20px 0 10px;
+    }
+  }
+
+  main {
+    margin-top: 125px;
+    h2 {
+      margin: 10px 0;
+    }
+  }
+
+  .stats {
+    width: 100%;
+    left: 10px;
+    top: 10px;
+    right: auto;
+    border: none;
+    padding: 0;
+    h3, ul {
+      margin: 0;
+      padding: 0;
+    }
+    h3, ul, li {
+      padding-right: 10px;
+      display: inline-block;
+    }
+  }
+
+}
